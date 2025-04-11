@@ -1,0 +1,18 @@
+{
+    "servers": {
+        "time": {
+            "command": "${workspaceFolder}/.venv/bin/python3",
+            "args": [
+                "-m",
+                "mcp_server_time",
+                "--local-timezone=America/New_York"
+            ]
+        },
+        "add": {
+            "command": "${workspaceFolder}/.venv/bin/python3",
+            "args": [
+                "/Users/jkp/workspace/mcp-servers/first-mcp/server.py",
+            ]
+        }
+    }
+}
