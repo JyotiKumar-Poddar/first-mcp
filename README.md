@@ -49,6 +49,24 @@ python server.py
 3. Press `F5` or use the Run and Debug menu to start the server
 4. Select "Run MCP Server" configuration
 
+### 3. Development Mode with MCP Inspector
+
+For faster testing and debugging, you can use the MCP Inspector:
+
+```sh
+# Basic server run
+mcp dev server.py
+
+# Run with additional dependencies
+mcp dev server.py --with pandas --with numpy
+
+# Mount local code for development
+
+mcp dev server.py --with-editable .
+```
+
+The development mode provides hot-reloading and better debugging capabilities through the MCP Inspector interface.
+
 The server includes one tool:
 - `add`: A simple addition tool that takes two integers and returns their sum
 
